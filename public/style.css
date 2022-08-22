@@ -134,10 +134,20 @@ h2{
 }
 
 .spanExp{
-  margin: 1em;
+  margin: 0.5em;
+  white-space: nowrap;
 }
 .spanAlign{
-  margin: 2em;
+  margin: 1em auto;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-auto-flow: column;
+  align-content: space-around;
+  justify-content: space-between;
 }
 
 .final{
