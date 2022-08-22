@@ -79,6 +79,7 @@ const seth = new THREE.Mesh(
 
 seth.position.z = -6;
 seth.position.x = 3.5;
+seth.position.y = 0.8;
 scene.add(seth);
 
 //Other Object moon?
@@ -97,7 +98,7 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 30;
+moon.position.z = 20;
 moon.position.setX(-10);
 
 //Scrolling to move
@@ -108,8 +109,8 @@ function moveCamera(){
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  seth.rotation.y += 0.01;
-  seth.rotation.z += 0.01;
+  seth.rotation.y += 0.04;
+  seth.rotation.z += 0.04;
 
   camera.position.z = (t * -0.015);
   if(camera.position.z < 0.1){
